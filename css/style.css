@@ -1,0 +1,268 @@
+/*ページ共通部分*/
+
+
+html, body, header, footer, section, article, div, span, applet, object, iframe, strong, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, legend, caption, tbody, tfoot, thead, label {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-style: inherit;
+    /*font-size: 100%;*/
+    font-family: inherit;
+    vertical-align: baseline;
+    list-style: none;
+    font-weight:normal;
+   }
+
+
+div {
+    font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 'Meiryo', sans-serif;
+    display: block;
+    margin: auto;
+}
+
+ul li {
+    list-style: none;
+
+}
+
+#header{
+    display: block;
+    padding: 0;
+    margin: 0;
+    
+}
+
+@media screen and (max-width:767px) {
+    .navi {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #83bfef;
+        color: #fff;
+        padding: 1rem;
+        position: relative;
+      }
+      
+      .menu-icon {
+        cursor: pointer;
+        display: flex;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        margin: 0 0 0 auto;
+      }
+      
+      .menu-icon span {
+        display: block;
+        background-color: #fff;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        width: 100%;
+      }
+      
+      .menu-icon span:nth-child(1) {
+        top: 0;
+        transition: all 0.3s;
+      }
+      
+      input:checked ~ .menu-icon span:nth-child(1) {
+        top: 9px;
+        transform: rotate(405deg);
+        transition: all 1s ease-in-out;
+      }
+
+      .menu-icon span:nth-child(2) {
+        top: 9px;
+        transition: all 0.3s;
+      }
+      
+      input:checked ~ .menu-icon span:nth-child(2) {
+        opacity: 0;
+        transition: all 0.3s;
+      }
+
+      .menu-icon span:nth-child(3) {
+        top: 18px;
+        transition: all 0.3s;
+      }
+      
+      input:checked ~ .menu-icon span:nth-child(3) {
+        top: 9px;
+        transform: rotate(-225deg);
+        transition: all 1s;
+      }
+
+      input:checked ~ .menu  {
+        opacity: 1;
+        transition: all 0.3s ease-out;
+        pointer-events: all;
+      }
+
+      input:checked ~ .menu *{
+        pointer-events: all;
+      }
+
+      input {
+        opacity: 0;
+        height: 0;
+      }
+
+      .menu {
+        opacity: 0;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        margin: 0;
+        padding: 0;
+        transition: all 0.3s ease-in;
+        pointer-events: none;
+      }
+      .menu *{
+        pointer-events: none;
+      }
+
+      .menu li {
+        margin: 0.5rem 0;
+        list-style: none;
+      }
+      
+      .menu a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 1rem 0;
+        width: 100%;
+        text-align: center;
+      }
+      
+      
+      .menu:active {
+        background-color: #fff;
+
+      }
+      
+      .menu a:active {
+        color: black;
+      }
+            
+}
+
+@media screen and (min-width:768px) {
+    .navi {
+        height: 50px;
+        font-size: 0;
+        background-color: #83bfef;
+    }
+    
+    .navi li {
+        display: inline-block;
+        background-color: #83bfef;
+        width: calc(100%/6);
+        height: 50px;
+        text-align: center;
+              
+    }
+    .navi ul {
+        margin: auto;
+        max-width: 1000px;
+        height: 50px;
+    }
+    
+    .navi a {
+        display: inline-block;
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .navi {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+    
+      .menu-icon {
+        display: none;
+      }
+    
+      input {
+        display: none;
+      }
+      .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: static;
+        background-color: transparent;
+      }
+    
+      .menu li {
+        display: flex;
+        align-items: center;
+      }
+    
+      .menu a {
+        padding: auto;
+      }
+
+}
+
+
+span.zh {
+    font-family: 'Microsoft YaHei', 'PingFang SC';
+}
+
+.header_place{
+    max-width: 1000px;
+    max-height: 90px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+.Lab_Name {
+    min-width: 100px;
+}
+
+.Lab_Name a {
+  text-decoration: none;
+  color: black;
+}
+
+.Lab_Name h1{
+    font-size: clamp(20px,4vw,50px);
+}
+
+.pic img {
+    width: max(30px, 4.5vw);
+}
+
+.language a {
+    color: #BCBCBC;
+    font-size: clamp(10px, 2.1vw, 20px);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid #BCBCBC;
+
+    
+
+}
+
+.clear{
+    clear: both;
+    }
+
+    
+/*ページ共通部分終わり*/
+
