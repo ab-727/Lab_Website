@@ -1,0 +1,263 @@
+html{
+	font-family:'Meiryo', 'MS Gothic', sans-serif;
+}
+
+
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+
+body{
+ background: linear-gradient(#6E6E6E, #151515);
+ background: #6E6E6E\9;
+ line-height: 1.5;
+}
+
+div#around{
+ background: linear-gradient(#ADD5F7, #35478C);
+ background: #35478C\9;
+ width: 1000px;
+ margin: 0 auto;/*’†‰›Šñ‚¹*/
+}
+
+
+/*header*/
+
+div#header{
+ background: radial-gradient(#4E7AC7, #16193B);
+ background: #4E7AC7\9;
+ padding: 20px;
+}
+
+div#header h1{
+ color: #FFFFFF;
+}
+
+/*menu*/
+
+div#menu{
+ background-color: #FFFFFF;
+ float: left;
+ width: 200px;
+}
+
+#menu a{
+ text-decoration: none;
+}
+#menu ul{
+ list-style: none;
+}
+
+#menu li{
+ margin: 2px;
+ padding: 2px;
+ border-left: 5px #35478C solid;
+ border-right: 1px #35478C solid;
+ border-bottom: 1px #35478C solid;
+ border-top: 1px #35478C solid;
+ display: block;
+ list-style: none;
+ background: #FFFFFF;
+}
+
+div#menu a{
+ display: block;
+ padding: 2px
+}
+div#menu a:link { color: #00f; }
+div#menu a:visited { color: #35478C; }
+div#menu li:hover { color: #35478C;}
+div#menu a:hover { background: #ADD5F7; }
+div#menu a:active { color: #f03; }
+
+
+li a#here{
+ background: #16193B;
+ color: #FFFFFF
+}
+
+/*main*/
+.main {  
+    width: 100%;  
+    border: 1px solid #000;  
+    text-align: center;  
+}
+
+div#main{
+ background-color: #FFFFFF;
+ color: #000000;
+ float: right;
+ width: 760px;
+ padding: 20px;
+ margin: 0 auto;
+ text-align: left;
+}
+
+
+div#main h1{
+ margin-bottom: 15px;
+ margin-top: 5px;
+ padding-bottom: 0px;
+ padding-left: 0;
+ border-top: 1px #16193B solid;
+ border-bottom: 3px #16193B solid;
+ background:linear-gradient(-90deg, #4E7AC7,#ADD5F7);
+ background:#ADD5F7\9;
+ color: #16193B;
+}
+div#main h2{
+ margin-bottom: 10px;
+ margin-top: 10px;
+ padding-bottom: 0px;
+ padding-left: 0;
+ border-top: 1px #16193B solid;
+ border-bottom: 3px #16193B solid;
+ background:linear-gradient(-90deg, #ADD5F7, #FFFFFF);
+ background:#FFFFFF\9;
+ color: #16193B;
+}
+div#main h3{
+ margin-bottom: 10px;
+ margin-top: 10px;
+ padding-bottom: 0px;
+ padding-left: 0;
+ border-top: 1px #16193B solid;
+ border-bottom: 3px #16193B solid;
+}
+#main ul{
+ margin: 2px;
+ display: block;
+ list-style-type: disc;
+ background: #FFFFFF;
+}
+#main li{
+ margin: 2px;
+ padding: 2px;
+}
+#main p{
+ margin: 2px;
+ padding: 2px;
+}
+#main table{
+ margin-left:auto;
+ margin-right:auto;
+}
+
+.box label{
+	background: #FFFFFF;
+	padding: 2px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+ 
+#box2 ul li{
+	text-indent: -3em;
+	padding-left: 3em;
+}
+
+
+#box3 ul li{
+	text-indent: -3em;
+	padding-left: 3em;
+}
+
+#box5 ul li{
+	text-indent: -3em;
+	padding-left: 3em;
+}
+
+.box input[type="checkbox"].on-off,
+.box input[type="checkbox"].on-off +div{
+	display: none;
+}
+ 
+.box input[type="checkbox"].on-off:checked +div{
+	display: block;
+}
+ 
+.box div{
+	margin: 0 0 20px;
+}
+
+.list1 ul,li{
+	padding-left:16px;
+	margin-left:16px;
+}
+
+/*footer*/
+
+div#footer{
+ background-color: #000000;
+ color: #FFFFFF;
+ clear: both;
+ text-align : center;
+}
+
+.zh{
+	font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+}
+
+
+
+/*?????????*/
+.kino{
+	transition: all 2s 1s ease-in-out;
+}
+
+.kino:active{
+	width: 1000px;
+	transition: all 4s 1s ease-out;
+
+}
+
+.ren{
+	transition-delay: 2s;
+}
+
+.ren:hover{
+	animation: hurueru 1s 3s infinite;
+}
+
+@keyframes hurueru {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+	12.5%{transform: translate(29.3px, 29.3px) rotateZ(10deg)}
+	25% {transform: translate(100px, 100px) rotateZ(-10deg)}
+	37.5% {transform: translate(170.7px, 29.3px) rotateZ(5deg)}
+	50% {transform: translate(200px, 0px) rotateZ(0deg)}
+	62.5% {transform: translate(170.7px, -29.3px) rotateZ(10deg)}
+	75% {transform: translate(100px, -100px) rotateZ(-5deg)}
+	87.5% {transform: translate(29.3px, -29.3px) rotateZ(5deg)}
+	100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
+
+.morinaga{
+	position: relative;
+	z-index: 3;
+	transition: all 1s 0s ease-in-out;
+	user-select: none;
+	
+}
+.morinaga_sleep{
+	position: absolute;
+	left: 0;
+	z-index: 2;
+
+
+}
+
+.sleep{
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 150px;
+
+}
+
+.morinaga:active{
+	opacity: 0;
+	user-select: none;
+	transition: all 2s 3s ease-in;
+}
+
