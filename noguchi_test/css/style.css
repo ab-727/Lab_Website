@@ -3,6 +3,7 @@
  margin: 0;
  padding: 0;
  box-sizing: border-box;
+ font-family:'Meiryo UI', 'MS Gothic', sans-serif;
 }
 
 /* ヘッダースタイル */
@@ -113,4 +114,8 @@ header h1{
 }
 .card_body {
   padding: 10px;
+}
+
+.zh{
+	font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
 }
