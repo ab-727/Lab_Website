@@ -233,3 +233,21 @@ footer li {
   text-align: center;
   margin-top: 5rem;
 }
+
+.news li {
+  padding: 2rem 0;
+  border-bottom:solid 1px #E0E0E0;
+  display: flex;
+}
+
+.news a {
+  color: #000;
+}
+
+.news dt {
+  margin-right: 3rem;
+  font-weight: bolder;
+}
+.news dd {
+  /* display: inline; */
+}
