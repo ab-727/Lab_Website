@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
 
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- font-family:'Meiryo UI', 'MS Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Meiryo UI', 'MS Gothic', sans-serif;
 }
 
 /* ヘッダースタイル */
@@ -13,14 +13,14 @@ header {
   background-color: #00205A;
   color: white;
   position: fixed;
-  left:0;
-	top:0;
-  width:100%;
-  z-index:1001;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); 
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1001;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
 }
 
-.tate_logo{
+.tate_logo {
   background-color: white;
 
 }
@@ -33,31 +33,62 @@ header {
 header a {
   text-decoration: none;
 }
-a:link, a:visited, a:hover, a:active {
+
+a:link,
+a:visited,
+a:hover,
+a:active {
   color: white;
 }
 
-header img{
-  width: 5rem; 
+header img {
+  width: 5rem;
   margin: 0 1rem;
   filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
 }
-  
 
-header h1{
+
+header h1 {
   font-size: 2rem;
   margin: 0;
-  font-family:sans-serif;
+  font-family: sans-serif;
 }
 
-.menu ul{
+.menu ul {
   margin: 0;
 }
 
-.menu li{
+.menu li {
   list-style: none;
   display: inline-block;
   padding: 10px;
+}
+
+.menu a {
+  position: relative;
+  /*アンダーラインの位置を決めるための基準 */
+}
+
+.menu a::after {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: white;
+  bottom: -8px;
+  /*アンダーラインがaタグの下端から現れる*/
+  transform: scale(0, 1);
+  /*アンダーラインの縮尺比率。ホバー前はx方向に0*/
+  transform-origin: left top;
+  /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の左端*/
+  transition: transform 0.3s;
+  /*変形の時間*/
+}
+
+.menu a:hover::after {
+  transform: scale(1, 1);
+  /*ホバー後、x軸方向に1（相対値）伸長*/
 }
 
 .slider-container {
@@ -66,6 +97,7 @@ header h1{
   height: 90vh;
   overflow: hidden;
 }
+
 .slide {
   position: absolute;
   width: 100%;
@@ -73,20 +105,22 @@ header h1{
   opacity: 0;
   transition: opacity 1s;
 }
+
 .slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .slide.active {
   opacity: 1;
 }
 
-.news li{
+.news li {
   padding-top: 2rem;
 }
 
-.title{
+.title {
   text-align: center;
   font-size: 4rem;
   margin-top: 2rem;
@@ -103,6 +137,7 @@ header h1{
   max-width: 80vw;
   margin: 0 auto;
 }
+
 .members h3 {
   padding: 1rem;
   margin-top: 2rem;
@@ -110,36 +145,38 @@ header h1{
   border-bottom: solid;
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: row;
-  margin:2rem 0;
+  margin: 2rem 0;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .2);
 }
 
 .card h4 {
   font-size: 2rem;
-  font-weight:300;
+  font-weight: 300;
   margin: 0.5rem 1rem
 }
+
 .card_img {
   height: 230px;
   width: 200px;
 }
 
 .card_img img {
-  object-fit:cover;
-  width:100%;
-  height:100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
   border-radius: 5px;
   overflow: hidden;
 }
+
 .card_body {
   padding: 10px;
 }
 
-.zh{
-	font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+.zh {
+  font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
 }
 
 .header_back {
@@ -157,6 +194,7 @@ footer {
   font-size: 15px;
   color: #4b5564;
 }
+
 .footer-text {
   color: #fff;
 }
@@ -184,7 +222,7 @@ hr {
   text-align: center;
 }
 
-footer li{
+footer li {
   list-style: none;
   display: inline-block;
   padding: 10px;
