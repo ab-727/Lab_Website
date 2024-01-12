@@ -5,6 +5,7 @@
  margin: 0;
  padding: 0;
  box-sizing: border-box;
+ font-family:'Meiryo UI', 'MS Gothic', sans-serif;
 }
 
 /* ヘッダースタイル */
@@ -137,6 +138,6 @@ header h1{
   padding: 10px;
 }
 
-.header_back{
-  height: 92px;
+.zh{
+	font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
 }
