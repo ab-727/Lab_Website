@@ -188,7 +188,7 @@ footer {
   margin-top: 5rem;
   width: 100%;
   /* text-align: center; */
-  padding: 2rem;
+  padding: 2rem 0;
   padding-top: 4rem;
   background-color: #EFEFEF;
   font-size: 15px;
@@ -226,4 +226,10 @@ footer li {
   list-style: none;
   display: inline-block;
   padding: 10px;
+}
+
+.sub_title {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 5rem;
 }
