@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
 
 <body>
@@ -360,13 +361,19 @@
         <div class="container col-10">
             <div class="d-flex container">
                 <div class="col-6">
-                    <address>
-                        住所<br />
-                        〒615－8540 京都市西京区京都大学桂　Cクラスター　C1棟<br />
-                        TEL：<a href="tel:">0120-123-456</a> / FAX：0120-123-456<br />
-                    </address>
+                    <div><img src="picture/logo.svg" alt="大学ロゴ"></div>
+                    <div>
+                        <address>
+                            住所<br />
+                            〒615－8540 京都市西京区京都大学桂　Cクラスター　C1棟<br />
+                            TEL：<a href="tel:">0120-123-456</a> / FAX：0120-123-456<br />
+                        </address>
+                    </div>
                 </div>
-                <div class="col-6">
+
+
+
+                <div class="col-6 mt-4">
                     <ul class="footer__navi">
                         <li><a href="#">トピックス</a></li>
                         <li><a href="#">研究室について</a></li>
@@ -375,6 +382,8 @@
                         <li><a href="#">アクセス</a></li>
                         <li><a href="#">リンク</a></li>
                     </ul>
+
+
                 </div>
             </div>
         </div>
@@ -391,10 +400,18 @@
             currentIndex = (currentIndex + 1) % slides.length;
             slides[currentIndex].classList.add('active');
         }
-
         setInterval(switchSlide, 4000);
+
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 92) {
+                    $('header').css('opacity', 0.7);
+                } else {
+                    $('header').css('opacity', 1);
+                }
+            });
+        });
     </script>
-    <script src="script/script_ai.js"></script>
 </body>
 
 </html>
