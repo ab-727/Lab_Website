@@ -228,16 +228,15 @@ footer li {
   padding: 10px;
 }
 
-.sub_title {
-  font-size: 3rem;
-  text-align: center;
-  margin-top: 5rem;
-}
 
 .news li {
   padding: 2rem 0;
   border-bottom:solid 1px #E0E0E0;
   display: flex;
+}
+.news li:first-child {
+  border-top:solid 1px #E0E0E0;
+  padding-top: 2rem;
 }
 
 .news a {
@@ -251,3 +250,63 @@ footer li {
 .news dd {
   /* display: inline; */
 }
+
+.footer img {
+  margin-bottom: 2rem;
+}
+
+.sub_title {
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  color: #00205A;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: 200;
+  text-align: center;
+}
+
+.face_img img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: solid 3px #4b5564;
+  margin-bottom: 10px;
+}
+
+.face_img {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.top_member {
+  background-color:#EFEFEF;
+  padding: 3rem 0;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.top_member h4 {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: bolder;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.role{
+  font-size: 1.3rem;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: bolder;
+}
+
+.detail{
+  text-align: left;
+  padding: 5px 20px;
+  padding-bottom: 10px;
+}
+
+a.btn-flat {
+  padding: 0.5rem 1.5rem;
+  color: #4b5564;
+  /* border-radius: 10; */
+  border: solid 1px #4b5564;
+}
+
