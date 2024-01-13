@@ -251,9 +251,11 @@ footer li {
   margin-right: 3rem;
   font-weight: bolder;
 }
-.news dd {
-  /* display: inline; */
+.contact dt {
+  margin-right: 1rem;
+  font-weight: bolder;
 }
+
 
 .footer img {
   margin-bottom: 2rem;
@@ -288,14 +290,14 @@ footer li {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
 }
 
-.top_member h4 {
+.top_member h4,.contact h4{
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
   font-weight: bolder;
   margin: 0;
   font-size: 2rem;
 }
 
-.role{
+.top_member h4,.contact .role{
   font-size: 1.3rem;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
   font-weight: bolder;
@@ -318,5 +320,15 @@ a.btn-flat {
 a.btn-flat:hover {
   color: #fff;
   background-color: #4b5564;
+}
+
+.contact li {
+  padding: 0.5rem 1rem;
+  /* border-bottom:solid 1px #E0E0E0; */
+  display: flex;
+}
+
+.contact li:last-child {
+  padding: 0 1rem;
 }
 
