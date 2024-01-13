@@ -1,6 +1,7 @@
 /* 共通のスタイル */
 @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -16,9 +17,9 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 1001;
+  z-index: 998;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
-  transition:all .5s ease;
+  transition: all .5s ease;
 }
 
 .tate_logo {
@@ -63,13 +64,13 @@ header h1 {
   list-style: none;
   display: inline-block;
   padding: 10px;
-  
+
 }
 
 .menu a {
   position: relative;
   /*アンダーラインの位置を決めるための基準 */
-  font-family:  serif;
+  font-family: serif;
   font-weight: bolder;
 }
 
@@ -235,11 +236,12 @@ footer li {
 
 .news li {
   padding: 2rem 0;
-  border-bottom:solid 1px #E0E0E0;
+  border-bottom: solid 1px #E0E0E0;
   display: flex;
 }
+
 .news li:first-child {
-  border-top:solid 1px #E0E0E0;
+  border-top: solid 1px #E0E0E0;
   padding-top: 2rem;
 }
 
@@ -251,6 +253,7 @@ footer li {
   margin-right: 3rem;
   font-weight: bolder;
 }
+
 .contact dt {
   margin-right: 1rem;
   font-weight: bolder;
@@ -285,25 +288,27 @@ footer li {
 }
 
 .top_member {
-  background-color:#EFEFEF;
+  background-color: #EFEFEF;
   padding: 3rem 0;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
 }
 
-.top_member h4,.contact h4{
+.top_member h4,
+.contact h4 {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
   font-weight: bolder;
   margin: 0;
   font-size: 2rem;
 }
 
-.top_member h4,.contact .role{
+.top_member h4,
+.contact .role {
   font-size: 1.3rem;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
   font-weight: bolder;
 }
 
-.detail{
+.detail {
   text-align: left;
   padding: 5px 20px;
   padding-bottom: 10px;
@@ -314,7 +319,7 @@ a.btn-flat {
   color: #4b5564;
   border-radius: 3;
   border: solid 1px #4b5564;
-  transition:all .5s ease;
+  transition: all .5s ease;
 }
 
 a.btn-flat:hover {
@@ -332,3 +337,25 @@ a.btn-flat:hover {
   padding: 0 1rem;
 }
 
+
+#splash {
+  /*fixedで全面に固定*/
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  text-align: center;
+  color: #fff;
+}
+
+/* Loadingバー中央配置　*/
+#splash_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
