@@ -16,10 +16,9 @@
 </head>
 
 <body>
-    <div id="splash">
+    <!-- <div id="splash">
         <div id="splash_text"></div>
-        <!--/splash-->
-    </div>
+    </div> -->
     <header class="d-flex justify-content-between px-4 align-items-center">
         <a href="index.html">
             <div class="d-flex align-items-center container">
@@ -74,7 +73,7 @@
     </header>
 
     <main>
-        
+
         <div class="header_back">
         </div>
         <div class="slider-container">
@@ -186,9 +185,27 @@
                 </div>
 
             </div>
+        </div>
+        <div class="about">
+            <div class="container col-10">
+                <h2 class="sub_title">研究室について</h2>
+                <div class="row">
+                    <div class="about_img col-6">
+
+                    </div>
+                    <div class="about_detail col-6">
+                        <p>当研究室は、工学研究科都市社会工学専攻の研究室で、都市計画・交通計画に関する研究を行っています。
+                            いわゆる「計画系」研究室に分類されます。
+                            都市社会工学専攻の博士・修士課程の学生と、工学部地球工学科土木コースの4回生が所属しています。</p>
+                            <a href="about.html"
+                            class="btn btn-flat"><span>詳しく見る
+                            </span></a>
+                    </div>
+
+                </div>
+            </div>
 
         </div>
-
 
 
 
@@ -237,7 +254,7 @@
             currentIndex = (currentIndex + 1) % slides.length;
             slides[currentIndex].classList.add('active');
         }
-        setInterval(switchSlide,5000);
+        setInterval(switchSlide, 5000);
 
         $(document).ready(function () {
             $(window).scroll(function () {

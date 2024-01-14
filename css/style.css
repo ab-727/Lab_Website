@@ -301,7 +301,7 @@ footer li {
   font-size: 2rem;
 }
 
-.top_member h4,
+.top_member .role,
 .contact .role {
   font-size: 1.3rem;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
@@ -325,6 +325,16 @@ a.btn-flat {
 a.btn-flat:hover {
   color: #fff;
   background-color: #4b5564;
+}
+
+.about_detail .btn-flat {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  color: #4b5564;
+  border-radius: 3;
+  border: solid 2px #4b5564;
+  transition: all .5s ease;
 }
 
 .contact li {
@@ -358,4 +368,34 @@ a.btn-flat:hover {
   width: 100%;
   transform: translate(-50%, -50%);
   color: #fff;
+}
+
+/* 研究室について */
+.about_img{
+  height: 400px; 
+  background-image: url("../picture/about.jpg");
+  background-size: cover;
+  border-radius: 1rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+}
+.about_detail p{
+  padding: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: 600;
+  text-align: left;
+}
+
+.about_detail {
+  text-align: center;
+}
+
+.about .sub_title{
+  padding: 3rem 0;
+}
+
+.about {
+  padding-bottom: 5rem;
 }
