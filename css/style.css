@@ -353,6 +353,8 @@ a.btn-flat:hover {
 }
 
 
+
+
 #splash {
   /*fixedで全面に固定*/
   position: fixed;
@@ -437,4 +439,26 @@ a.btn-flat:hover {
   font-weight: 600;
   font-size: 1.3rem;
   border-bottom: solid 1px #E0E0E0;
+}
+
+.caution {
+  margin: 5rem 0;
+  
+}
+
+.caution_text{
+  list-style: none;
+  padding-left: 1.5em;
+  margin-left: 0.5em;
+  
+}
+
+.caution_text span{
+  font-weight: bold;
+  padding: 0 5px
+}
+
+.caution_text li:before{
+  content: "※";
+  margin-right: 0.5em;
 }
