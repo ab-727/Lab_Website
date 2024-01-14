@@ -127,8 +127,20 @@ header h1 {
 
 .title {
   text-align: center;
-  font-size: 4rem;
-  margin-top: 2rem;
+  font-size: 3rem;
+  margin: 3rem 0;
+  color: #00205A;
+  font-family: 'Shippori Mincho', serif;
+  font-weight: 700;
+}
+
+.sub_title {
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  color: #00205A;
+  font-family: 'Shippori Mincho', serif;
+  font-weight: 800;
+  text-align: center;
 }
 
 .news h3 {
@@ -264,14 +276,7 @@ footer li {
   margin-bottom: 2rem;
 }
 
-.sub_title {
-  font-size: 2.5rem;
-  margin: 2rem 0;
-  color: #00205A;
-  font-family: 'Shippori Mincho', serif;
-  font-weight: 800;
-  text-align: center;
-}
+
 
 .face_img img {
   width: 170px;
@@ -398,4 +403,38 @@ a.btn-flat:hover {
 
 .about {
   padding-bottom: 5rem;
+}
+
+/* アクセス */
+.route img {
+  width: 70%;
+}
+
+.route {
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.map {
+  margin: 5rem 0;
+}
+
+.address {
+  padding: 3rem;
+}
+.address p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  
+}
+
+.address a {
+  color:#000;
+  text-decoration: none;
+}
+
+.address .bold {
+  font-weight: 600;
+  font-size: 1.3rem;
+  border-bottom: solid 1px #E0E0E0;
 }
