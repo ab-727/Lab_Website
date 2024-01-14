@@ -319,10 +319,29 @@ footer li {
   font-weight: bolder;
 }
 
+.prof div {
+  position: relative;
+  height: 50%;
+  
+
+}
+
+.prof div a{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+
+}
+
 .detail {
   text-align: left;
   padding: 5px 20px;
   padding-bottom: 10px;
+  text-align: center;
 }
 
 a.btn-flat {
