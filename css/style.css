@@ -208,7 +208,7 @@ header h1 {
 
 
 footer {
-  margin-top: 5rem;
+  margin-top: 15rem;
   width: 100%;
   /* text-align: center; */
   padding: 2rem 0;
@@ -503,4 +503,66 @@ a.btn-flat:hover {
   font-family: 'Shippori Mincho', serif;
   display: block;
   margin-bottom: 3rem;
+}
+
+/* アコーディオン */
+/*アコーディオン全体*/
+.accordion-area{
+  list-style: none;
+  margin:0 auto;
+}
+
+.accordion-area li {
+  margin-bottom: 2rem;
+}
+
+
+
+/*アコーディオンタイトル*/
+.accordion-area .title {
+  position: relative;/*+マークの位置基準とするためrelative指定*/
+  cursor: pointer;
+  font-size:2rem;
+  font-weight: normal;
+  text-align: left;
+  padding-left: 3rem;
+  transition: all .5s ease;
+  font-weight: 600;
+  margin: 0;
+}
+
+/*アイコンの＋と×*/
+.accordion-area .title::before,
+.accordion-area .title::after{
+  position: absolute;
+  content:'';
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  
+}
+.accordion-area .title::before{
+  top:53%;
+  left: 15px;
+  transform: rotate(0deg);
+  
+}
+.accordion-area .title::after{    
+  top:53%;
+  left: 15px;
+  transform: rotate(90deg);
+
+}
+/*　closeというクラスがついたら形状変化　*/
+.accordion-area .title.close::before{
+transform: rotate(45deg);
+}
+
+.accordion-area .title.close::after{
+transform: rotate(-45deg);
+}
+
+/*アコーディオンで現れるエリア*/
+.box {
+  display: none;
 }
