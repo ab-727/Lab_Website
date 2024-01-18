@@ -487,3 +487,20 @@ a.btn-flat:hover {
   content: "※";
   margin-right: 0.5em;
 }
+
+/* リンク集 */
+.link_title {
+  font-size: 1.5rem;
+  font-family: 'Shippori Mincho', serif;
+  padding: 8px 0;
+  border-bottom: solid 1px #E0E0E0;
+  /* border-top: solid 1px #333; */
+}
+
+.link a{
+  color: #4b5564;
+  font-size: 1.3rem;
+  font-family: 'Shippori Mincho', serif;
+  display: block;
+  margin-bottom: 3rem;
+}
