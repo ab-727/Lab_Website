@@ -144,11 +144,7 @@ header h1 {
   text-align: center;
 }
 
-.news h3 {
-  background-color: #E9F2FB;
-  padding: 1rem;
-  margin-top: 2rem;
-}
+
 
 
 .members {
@@ -253,16 +249,39 @@ footer li {
 }
 
 
-.news li {
+.news .box li {
   padding: 2rem 0;
   border-bottom: solid 1px #E0E0E0;
   display: flex;
 }
 
-.news li:first-child {
+.top_news li {
+  padding: 2rem 0;
+  border-bottom: solid 1px #E0E0E0;
+  display: flex;
+}
+
+.news .box li:first-child {
   border-top: solid 1px #E0E0E0;
   padding-top: 2rem;
+  margin-top: 1rem;
 }
+
+.top_news li:first-child {
+  border-top: solid 1px #E0E0E0;
+  padding-top: 2rem;
+  /* margin-top: 1rem; */
+}
+
+.top_news li:last-child {
+  border-bottom: none;
+  margin-bottom: 3rem;
+}
+
+dd {
+  margin: 0;
+}
+
 
 .news a {
   color: #000;
@@ -320,29 +339,14 @@ footer li {
   font-weight: bolder;
 }
 
-.prof div {
-  position: relative;
-  height: 50%;
-  
 
-}
-
-.prof div a{
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-
-}
 
 .detail {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
   text-align: left;
-  padding: 5px 20px;
-  padding-bottom: 10px;
-  text-align: center;
 }
 
 a.btn-flat {
@@ -513,7 +517,7 @@ a.btn-flat:hover {
   margin:0 auto;
 }
 
-.accordion-area li {
+.accordion-area > li {
   margin-bottom: 2rem;
 }
 
@@ -531,6 +535,15 @@ a.btn-flat:hover {
   font-weight: 600;
   margin: 0;
 }
+
+.news .accordion-area .title {
+
+  font-size:1.5rem;
+  color: #4b5564;
+  font-weight: 500;
+
+}
+
 
 /*アイコンの＋と×*/
 .accordion-area .title::before,
