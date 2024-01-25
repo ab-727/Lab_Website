@@ -58,7 +58,7 @@ header h1 {
 
 .menu ul {
   margin: 0;
-  margin-right: 6rem;
+  margin-right: 1rem;
 }
 
 .menu li {
@@ -360,6 +360,26 @@ a.btn-flat {
 a.btn-flat:hover {
   color: #fff;
   background-color: #4b5564;
+}
+
+.header_right .btn{
+  border-radius: 27px;
+  color: #fff;
+  border: solid 1px #fff;
+  padding: 9px 10px;
+  margin-right: 1rem;
+}
+
+.header_right a.btn-flat:hover {
+  background-color: #4b5564;
+}
+
+
+
+.header_right img {
+  width: 30px;
+  margin: 0;
+  margin-right: 5px;
 }
 
 .about_detail .btn-flat {
