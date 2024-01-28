@@ -313,6 +313,27 @@
         <p class="copyright">© 2023 京都大学大学院 都市地域計画研究室 All Rights Reserved.
         </p>
     </footer>
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentIndex = 0;
+
+        function switchSlide() {
+            slides[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % slides.length;
+            slides[currentIndex].classList.add('active');
+        }
+        setInterval(switchSlide, 5000);
+
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 92) {
+                    $('header').css('opacity', 0.7);
+                } else {
+                    $('header').css('opacity', 1);
+                }
+            });
+        });
+    </script>
     <script src="../script/accordion.js"></script>
 </body>
 
