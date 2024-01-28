@@ -633,6 +633,13 @@ a.btn-flat:hover {
 
 }
 
+.ask p {
+  background-color: white;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+
 
 /*アイコンの＋と×*/
 .accordion-area .title::before,
