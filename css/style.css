@@ -694,4 +694,7 @@ transform: rotate(-45deg);
 }
 
 
-
+/* englishページ */
+h1.en  {
+  font-size: 1.5rem;
+}
