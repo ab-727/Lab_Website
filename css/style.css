@@ -337,6 +337,7 @@ footer li {
   margin-bottom: 3rem;
 }
 
+
 dd {
   margin: 0;
 }
@@ -662,4 +663,12 @@ transform: rotate(-45deg);
 /*アコーディオンで現れるエリア*/
 .box {
   display: none;
+}
+
+.interviewee {
+  color: #000;
+}
+
+.interview {
+  list-style-type: none;
 }
