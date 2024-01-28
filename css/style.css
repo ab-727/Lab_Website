@@ -672,3 +672,17 @@ transform: rotate(-45deg);
 .interview {
   list-style-type: none;
 }
+
+.interview_inner_ul {
+  list-style-type: circle;
+}
+
+.interview_inner_ul li {
+  padding-top: 0;
+}
+
+.container a,
+.container a:visited {
+  text-decoration-color: #000;
+  color: #000;
+}
