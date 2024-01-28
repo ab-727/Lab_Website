@@ -262,6 +262,11 @@ header h1 {
   height: 92px;
 }
 
+.container a,
+.container a:visited {
+  text-decoration-color: #000;
+  color: #000;
+}
 
 footer {
   margin-top: 10rem;
@@ -681,8 +686,5 @@ transform: rotate(-45deg);
   padding-top: 0;
 }
 
-.container a,
-.container a:visited {
-  text-decoration-color: #000;
-  color: #000;
-}
+
+
