@@ -703,3 +703,8 @@ transform: rotate(-45deg);
 .application h4 {
   margin-top: 20px;
 } 
+
+/* englishページ */
+h1.en  {
+  font-size: 1.5rem;
+}
