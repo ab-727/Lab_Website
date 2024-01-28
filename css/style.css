@@ -145,7 +145,12 @@ header h1 {
 }
 
 
-
+.center {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  margin: 20px 0;
+}
 
 .members {
   max-width: 80vw;
