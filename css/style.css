@@ -97,6 +97,60 @@ header h1 {
   /*ホバー後、x軸方向に1（相対値）伸長*/
 }
 
+/* ドロップダウンメニュー */
+.dropdown__lists {
+  display: none;/*デフォルトでは非表示の状態にしておく*/
+  position: absolute;
+  top: 40px;
+  left: -35px;
+}
+
+.drop {
+  position: relative;
+}
+
+.drop:hover .dropdown__lists {
+  display: block;/*ホバーしたら表示*/
+}
+.dropdown__list {
+  background-color: #00205A;
+  width: 120%;
+  font-size: 0.9rem;
+  transition: all .3s;
+  position: relative;
+  opacity: 0.9;
+}
+.dropdown__list:not(:first-child)::before{
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.dropdown__list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+.dropdown__list a::before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: rotate(135deg);
+  position: absolute;
+  right: 3px;
+  top: calc(50% - 5px);
+}
+
 .slider-container {
   position: relative;
   width: 100%;
