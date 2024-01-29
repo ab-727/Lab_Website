@@ -710,6 +710,16 @@ transform: rotate(-45deg);
   padding-top: 0;
 }
 
+.eligibility > li {
+  font-size: 1.5rem;
+}
+.application h3 {
+  font-weight: bold;
+}
+
+.application h4 {
+  margin-top: 20px;
+} 
 
 /* englishページ */
 h1.en  {
