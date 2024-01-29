@@ -141,6 +141,7 @@
                 　写真（左）は現在の低密度な土地利用状況の写真、写真（右）は実証運行を行っている「京都らくなんエクスプレス(R'EX)」の写真です。</p>
 
         </div>
+
     </main>
     <footer class="footer">
         <div class="container col-10">
@@ -149,9 +150,9 @@
                     <div><img src="../picture/logo.svg" alt="大学ロゴ"></div>
                     <div>
                         <address>
-                            住所<br />
-                            〒615－8540 京都市西京区京都大学桂　Cクラスター　C1棟<br />
-                            TEL：<a href="tel:">0120-123-456</a> / FAX：0120-123-456<br />
+                            Address<br />
+                            C1 Bldg. C Cluster, Katsura Campus, Nishikyo-ku, Kyoto-shi, Kyoto, JAPAN 615-8540<br />
+                            TEL：<a href="tel:">075-383-3228</a>
                         </address>
                     </div>
                 </div>
@@ -160,12 +161,12 @@
 
                 <div class="col-6 mt-4">
                     <ul class="footer__navi">
-                        <li><a href="#">トピックス</a></li>
-                        <li><a href="#">研究室について</a></li>
-                        <li><a href="#">メンバー</a></li>
-                        <li><a href="#">連絡先</a></li>
-                        <li><a href="#">アクセス</a></li>
-                        <li><a href="#">リンク</a></li>
+                        <li><a href="#">Topics</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Members</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Access</a></li>
+                        <li><a href="#">Link</a></li>
                     </ul>
 
 
@@ -185,7 +186,7 @@
             currentIndex = (currentIndex + 1) % slides.length;
             slides[currentIndex].classList.add('active');
         }
-        setInterval(switchSlide, 4000);
+        setInterval(switchSlide, 5000);
 
         $(document).ready(function () {
             $(window).scroll(function () {
@@ -197,6 +198,9 @@
             });
         });
     </script>
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+    <script src="../script/loading.js"></script>
+
 </body>
 
 </html>

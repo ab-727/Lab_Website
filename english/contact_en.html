@@ -157,62 +157,65 @@
                 </div>
             </div>
 
-    </main>
-    <footer class="footer">
-        <div class="container col-10">
-            <div class="d-flex container">
-                <div class="col-6">
-                    <div><img src="../picture/logo.svg" alt="大学ロゴ"></div>
-                    <div>
-                        <address>
-                            住所<br />
-                            〒615－8540 京都市西京区京都大学桂　Cクラスター　C1棟<br />
-                            TEL：<a href="tel:">0120-123-456</a> / FAX：0120-123-456<br />
-                        </address>
+        </main>
+        <footer class="footer">
+            <div class="container col-10">
+                <div class="d-flex container">
+                    <div class="col-6">
+                        <div><img src="../picture/logo.svg" alt="大学ロゴ"></div>
+                        <div>
+                            <address>
+                                Address<br />
+                                C1 Bldg. C Cluster, Katsura Campus, Nishikyo-ku, Kyoto-shi, Kyoto, JAPAN 615-8540<br />
+                                TEL：<a href="tel:">075-383-3228</a>
+                            </address>
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="col-6 mt-4">
+                        <ul class="footer__navi">
+                            <li><a href="#">Topics</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Members</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Access</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+    
+    
                     </div>
                 </div>
-
-
-
-                <div class="col-6 mt-4">
-                    <ul class="footer__navi">
-                        <li><a href="#">トピックス</a></li>
-                        <li><a href="#">研究室について</a></li>
-                        <li><a href="#">メンバー</a></li>
-                        <li><a href="#">連絡先</a></li>
-                        <li><a href="#">アクセス</a></li>
-                        <li><a href="#">リンク</a></li>
-                    </ul>
-
-
-                </div>
             </div>
-        </div>
-        <hr />
-        <p class="copyright">© 2023 京都大学大学院 都市地域計画研究室 All Rights Reserved.
-        </p>
-    </footer>
-    <script>
-        const slides = document.querySelectorAll('.slide');
-        let currentIndex = 0;
-
-        function switchSlide() {
-            slides[currentIndex].classList.remove('active');
-            currentIndex = (currentIndex + 1) % slides.length;
-            slides[currentIndex].classList.add('active');
-        }
-        setInterval(switchSlide, 4000);
-
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 92) {
-                    $('header').css('opacity', 0.7);
-                } else {
-                    $('header').css('opacity', 1);
-                }
+            <hr />
+            <p class="copyright">© 2023 京都大学大学院 都市地域計画研究室 All Rights Reserved.
+            </p>
+        </footer>
+        <script>
+            const slides = document.querySelectorAll('.slide');
+            let currentIndex = 0;
+    
+            function switchSlide() {
+                slides[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % slides.length;
+                slides[currentIndex].classList.add('active');
+            }
+            setInterval(switchSlide, 5000);
+    
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 92) {
+                        $('header').css('opacity', 0.7);
+                    } else {
+                        $('header').css('opacity', 1);
+                    }
+                });
             });
-        });
-    </script>
-</body>
-
-</html>
+        </script>
+        <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+        <script src="../script/loading.js"></script>
+    
+    </body>
+    
+    </html>
