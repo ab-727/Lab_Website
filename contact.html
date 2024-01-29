@@ -72,7 +72,7 @@
                     <li><a href="access.html">アクセス</a></li>
                     <li><a href="link.html">リンク</a></li>
                 </ul>
-                
+
             </nav>
             <a href="english/contact_en.html" class="btn btn-flat">
                 <span><img src="picture/ei-language.png" alt="language">English</span>
@@ -104,9 +104,11 @@
                         </li>
                         <li>
                             <dt class="mail">E-mail
-                            </dt>  
+                            </dt>
                         </li>
-                        <li><dd>uno.nobuhiro.2v(アット)kyoto-u.ac.jp</dd></li>
+                        <li>
+                            <dd>uno.nobuhiro.2v(アット)kyoto-u.ac.jp</dd>
+                        </li>
                     </div>
                     <div class="col-4 contact_card">
                         <img src="picture/face_matsunaka2.jpg">
@@ -123,9 +125,11 @@
                         </li>
                         <li>
                             <dt class="mail">E-mail
-                            </dt>  
+                            </dt>
                         </li>
-                        <li><dd>uno.nobuhiro.2v(アット)kyoto-u.ac.jp</dd></li>
+                        <li>
+                            <dd>uno.nobuhiro.2v(アット)kyoto-u.ac.jp</dd>
+                        </li>
 
                     </div>
                     <div class="col-4 contact_card">
@@ -143,9 +147,11 @@
                         </li>
                         <li>
                             <dt class="mail">E-mail
-                            </dt>  
+                            </dt>
                         </li>
-                        <li><dd>uno.nobuhiro.2v(アット)kyoto-u.ac.jp</dd></li>
+                        <li>
+                            <dd>uno.nobuhiro.2v(アット)kyoto-u.ac.jp</dd>
+                        </li>
                     </div>
                 </div>
                 <div class="caution">
@@ -164,8 +170,8 @@
                     <div>
                         <address>
                             住所<br />
-                            〒615－8540 京都市西京区京都大学桂　Cクラスター　C1棟<br />
-                            TEL：<a href="tel:">0120-123-456</a> / FAX：0120-123-456<br />
+                            〒615－8540　京都市西京区京都大学桂　Cクラスター　C1棟<br />
+                            TEL：<a href="tel:" class="tel">075（383）3228</a>
                         </address>
                     </div>
                 </div>
@@ -199,7 +205,7 @@
             currentIndex = (currentIndex + 1) % slides.length;
             slides[currentIndex].classList.add('active');
         }
-        setInterval(switchSlide, 4000);
+        setInterval(switchSlide, 5000);
 
         $(document).ready(function () {
             $(window).scroll(function () {
@@ -211,6 +217,9 @@
             });
         });
     </script>
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+    <script src="script/loading.js"></script>
+
 </body>
 
 </html>
