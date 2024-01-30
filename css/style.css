@@ -725,3 +725,273 @@ transform: rotate(-45deg);
 h1.en  {
   font-size: 1.5rem;
 }
+
+
+/* ハンバーガーメニュー */
+/* Navbar & Navmenu color */
+:root {
+  --background-navbar: #00205A;
+  opacity: 0.98;
+}
+
+.sp .header {
+  background: var(--background-navbar);
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+}
+
+/* Nav items */
+.sp .menu {
+  list-style: none;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  margin-top: 4rem;
+  padding: 0 0 10px 0;
+  clear: both;
+  background: var(--background-navbar);
+  transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  transform: scale(1, 0);
+  transform-origin: top;
+}
+
+/* Hamburger menu button */
+.sp  .menu-btn:checked ~ .menu {
+  transform: scale(1, 1);
+  transform-origin: top;
+  transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+}
+
+/* Hamburger menbu text */
+.sp  .menu a {
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ddd;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.sp .menu li {
+  border-top: 0.5px solid #ddd;
+  padding: 12px 0;
+  margin: 0 54px;
+  opacity: 0;
+  transition: 0.5s;
+  display: block;
+}
+
+.sp .menu-btn:checked ~ .menu a,
+.sp .menu-btn:checked ~ .menu li {
+  opacity: 1;
+  transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.2s;
+}
+
+.sp .menu-btn {
+  display: none;
+}
+
+.sp .menu-icon {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding: 24px 14px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.sp .navicon {
+  background: #ddd;
+  display: block;
+  height: 2.5px;
+  width: 26px;
+  position: relative;
+  transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+}
+
+.sp .navicon:before,
+.sp .navicon:after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #ddd;
+  transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+}
+
+.sp .navicon:before {
+  top: 9px;
+}
+
+.sp .navicon:after {
+  bottom: 9px;
+}
+
+/* Hamburger Menu Animation Start */
+.sp .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.sp .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.sp .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before {
+  top: 0;
+}
+.sp .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  bottom: 0;
+}
+
+.sp .menu-btn:checked ~ .menu-icon .navicon {
+  background: rgba(0, 0, 0, 0);
+  transition: 0.2192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+}
+/* Hamburger Menu Animation End */
+
+/* Navbar Container */
+.sp .navtext-container {
+  width: 100%;
+  height: 4rem;
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar Text */
+.sp .navtext {
+  position: absolute;
+  text-transform: uppercase;
+  color: #ddd;
+  letter-spacing: 4px;
+  font-size: 20px;
+}
+
+.sp .drop li {
+  margin: 0;
+  padding: 0;
+  padding-top:12px;
+  border: none;
+}
+
+/* スマホページ */
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+ 
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+    .pc { display: none !important; }
+    .sp { display: block !important; }
+
+    .sp header {
+      height: 4rem;
+    }
+
+    .sp h1 {
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+    }
+
+    .sp header img {
+      width: 2.3rem;
+      margin: 0;
+      margin-right: 6px;
+    }
+
+    .sp.header_back {
+      height: 4rem;
+    }
+
+    .sub_title {
+      font-size: 1.6rem;
+      padding: 1rem 0 !important;
+      margin: 0;
+    }
+
+    .top_news {
+      font-size: 0.9rem;
+    }
+
+    .top_news li{
+      padding: 1rem 0;
+    }
+    .top_news li:first-child{
+      padding-top: 1rem;
+    }
+
+    .about_img {
+      width: 100%;
+      height: 200px;
+      border-radius: 0;
+    }
+
+    .about p {
+      font-size: 0.9rem;
+      padding: 2rem 2rem;
+      margin: 0;
+    }
+
+    a.btn.btn-flat {
+      font-size: 1rem;
+    }
+
+    .detail {
+      height:auto;
+    }
+
+    .slider-container {
+      height: 200px;
+    }
+
+    .top_member h4 {
+      font-size: 1.3rem;
+    }
+
+    .top_member .role {
+      font-size: 1rem;
+    }
+
+    .face_img {
+      margin: 1rem 0 0 0;
+    }
+
+    .face_img img {
+      width: 120px;
+      height: 120px;
+    }
+
+    .top_member {
+      padding: 0;
+      padding-top: 2rem;
+    }
+
+    .about {
+      padding: 2rem 0 0 0;
+    }
+
+    .ask .container{
+      padding: 2rem 2rem;
+      background: none;
+      margin: 2rem 0;
+    }
+
+    .ask p {
+      font-size: 1rem;
+    }
+
+    .ask .sub_title{
+      font-size: 1.5rem;
+      margin: 0 0 1rem 0;
+    }
+
+    footer {
+      margin: 0;
+    }
+}
