@@ -99,7 +99,8 @@ header h1 {
 
 /* ドロップダウンメニュー */
 .dropdown__lists {
-  display: none;/*デフォルトでは非表示の状態にしておく*/
+  display: none;
+  /*デフォルトでは非表示の状態にしておく*/
   position: absolute;
   top: 40px;
   left: -35px;
@@ -110,8 +111,10 @@ header h1 {
 }
 
 .drop:hover .dropdown__lists {
-  display: block;/*ホバーしたら表示*/
+  display: block;
+  /*ホバーしたら表示*/
 }
+
 .dropdown__list {
   background-color: #00205A;
   width: 120%;
@@ -120,7 +123,8 @@ header h1 {
   position: relative;
   opacity: 0.9;
 }
-.dropdown__list:not(:first-child)::before{
+
+.dropdown__list:not(:first-child)::before {
   content: "";
   width: 100%;
   height: 1px;
@@ -138,6 +142,7 @@ header h1 {
   text-decoration: none;
   position: relative;
 }
+
 .dropdown__list a::before {
   content: '';
   display: block;
@@ -412,7 +417,7 @@ dd {
 
 
 .detail {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   height: 10rem;
@@ -432,7 +437,7 @@ a.btn-flat:hover {
   background-color: #4b5564;
 }
 
-.header_right .btn{
+.header_right .btn {
   border-radius: 30px;
   color: #fff;
   border: solid 1px #fff;
@@ -502,14 +507,15 @@ a.btn-flat:hover {
 }
 
 /* 研究室について */
-.about_img{
-  height: 400px; 
+.about_img {
+  height: 400px;
   background-image: url("../picture/about.jpg");
   background-size: cover;
   border-radius: 1rem;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
 }
-.about_detail p{
+
+.about_detail p {
   padding: 3rem;
   padding-top: 4rem;
   padding-bottom: 1rem;
@@ -523,7 +529,7 @@ a.btn-flat:hover {
   text-align: center;
 }
 
-.about .sub_title{
+.about .sub_title {
   padding: 3rem 0;
 }
 
@@ -548,14 +554,15 @@ a.btn-flat:hover {
 .address {
   padding: 3rem;
 }
+
 .address p {
   font-size: 1.2rem;
   line-height: 1.7;
-  
+
 }
 
 .address a {
-  color:#000;
+  color: #000;
   text-decoration: none;
 }
 
@@ -567,22 +574,22 @@ a.btn-flat:hover {
 
 .caution {
   margin: 5rem 0;
-  
+
 }
 
-.caution_text{
+.caution_text {
   list-style: none;
   padding-left: 1.5em;
   margin-left: 0.5em;
-  
+
 }
 
-.caution_text span{
+.caution_text span {
   font-weight: bold;
   padding: 0 5px
 }
 
-.caution_text li:before{
+.caution_text li:before {
   content: "※";
   margin-right: 0.5em;
 }
@@ -596,7 +603,7 @@ a.btn-flat:hover {
   /* border-top: solid 1px #333; */
 }
 
-.link a{
+.link a {
   color: #4b5564;
   font-size: 1.3rem;
   font-family: 'Shippori Mincho', serif;
@@ -606,12 +613,12 @@ a.btn-flat:hover {
 
 /* アコーディオン */
 /*アコーディオン全体*/
-.accordion-area{
+.accordion-area {
   list-style: none;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
-.accordion-area > li {
+.accordion-area>li {
   margin-bottom: 2rem;
 }
 
@@ -619,9 +626,10 @@ a.btn-flat:hover {
 
 /*アコーディオンタイトル*/
 .accordion-area .title {
-  position: relative;/*+マークの位置基準とするためrelative指定*/
+  position: relative;
+  /*+マークの位置基準とするためrelative指定*/
   cursor: pointer;
-  font-size:2rem;
+  font-size: 2rem;
   font-weight: normal;
   text-align: left;
   padding-left: 3rem;
@@ -632,7 +640,7 @@ a.btn-flat:hover {
 
 .news .accordion-area .title {
 
-  font-size:1.5rem;
+  font-size: 1.5rem;
   color: #4b5564;
   font-weight: 500;
 
@@ -644,7 +652,7 @@ a.btn-flat:hover {
   text-align: center;
 }
 
-.ask .container{
+.ask .container {
   background-color: lightyellow;
   padding: 3rem;
   border-radius: 3rem;
@@ -654,7 +662,7 @@ a.btn-flat:hover {
 .ask .sub_title {
   /* color: #000; */
   font-size: 2rem;
-  margin:0;
+  margin: 0;
   margin-bottom: 2rem;
 }
 
@@ -665,33 +673,36 @@ a.btn-flat:hover {
 
 /*アイコンの＋と×*/
 .accordion-area .title::before,
-.accordion-area .title::after{
+.accordion-area .title::after {
   position: absolute;
-  content:'';
+  content: '';
   width: 20px;
   height: 2px;
   background-color: #333;
-  
+
 }
-.accordion-area .title::before{
-  top:53%;
+
+.accordion-area .title::before {
+  top: 53%;
   left: 15px;
   transform: rotate(0deg);
-  
+
 }
-.accordion-area .title::after{    
-  top:53%;
+
+.accordion-area .title::after {
+  top: 53%;
   left: 15px;
   transform: rotate(90deg);
 
 }
+
 /*　closeというクラスがついたら形状変化　*/
-.accordion-area .title.close::before{
-transform: rotate(45deg);
+.accordion-area .title.close::before {
+  transform: rotate(45deg);
 }
 
-.accordion-area .title.close::after{
-transform: rotate(-45deg);
+.accordion-area .title.close::after {
+  transform: rotate(-45deg);
 }
 
 /*アコーディオンで現れるエリア*/
@@ -715,22 +726,99 @@ transform: rotate(-45deg);
   padding-top: 0;
 }
 
-.eligibility > li {
+.eligibility>li {
   font-size: 1.5rem;
 }
+
 .application h3 {
   font-weight: bold;
 }
 
 .application h4 {
   margin-top: 20px;
-} 
+}
 
 /* englishページ */
-h1.en  {
+h1.en {
   font-size: 1.5rem;
 }
 
+/* 研究室紹介 */
+.intro h3 {
+  margin-top: 60px;
+}
+
+.intro th {
+  background-color: #06255d;
+  color: white;
+}
+
+.intro tbody :nth-child(even) td {
+  background-color: #efefef;
+
+}
+
+.schedule tr :first-child {
+  width: 10vw;
+}
+
+.schedule tr :nth-child(2) {
+  width: 20vw;
+  border-right-color: #000;
+}
+
+.schedule tr :nth-child(3) {
+  border-left-color: #000;
+}
+
+.intro dt {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.intro dd {
+  font-size: 18px;
+}
+
+.intro p {
+  font-size: 18px;
+}
+
+.intro li {
+  font-size: 20px;
+}
+
+.assign tbody tr :nth-child(2) {
+  font-weight: bold;
+}
+
+.assign tbody tr :nth-child(3) {
+  font-weight: bold;
+}
+
+
+.recruit tr :first-child {
+  width: 33%;
+}
+
+.recruit tbody tr :nth-child(2) {
+  text-align: left;
+}
+
+@media only screen and (max-width: 750px) {
+  .schedule tr :first-child {
+    width: 60px;
+  }
+
+  .assign tr :first-child {
+    width: 70px;
+  }
+
+  .recruit tr :first-child {
+    width: 70px;
+  }
+
+}
 
 /* ハンバーガーメニュー */
 /* Navbar & Navmenu color */
@@ -763,14 +851,14 @@ h1.en  {
 }
 
 /* Hamburger menu button */
-.sp  .menu-btn:checked ~ .menu {
+.sp .menu-btn:checked~.menu {
   transform: scale(1, 1);
   transform-origin: top;
   transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
 }
 
 /* Hamburger menbu text */
-.sp  .menu a {
+.sp .menu a {
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 2px;
@@ -790,8 +878,8 @@ h1.en  {
   display: block;
 }
 
-.sp .menu-btn:checked ~ .menu a,
-.sp .menu-btn:checked ~ .menu li {
+.sp .menu-btn:checked~.menu a,
+.sp .menu-btn:checked~.menu li {
   opacity: 1;
   transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.2s;
 }
@@ -837,25 +925,27 @@ h1.en  {
 }
 
 /* Hamburger Menu Animation Start */
-.sp .menu-btn:checked ~ .menu-icon .navicon:before {
+.sp .menu-btn:checked~.menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
 
-.sp .menu-btn:checked ~ .menu-icon .navicon:after {
+.sp .menu-btn:checked~.menu-icon .navicon:after {
   transform: rotate(45deg);
 }
 
-.sp .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before {
+.sp .menu-btn:checked~.menu-icon:not(.steps) .navicon:before {
   top: 0;
 }
-.sp .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+
+.sp .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
   bottom: 0;
 }
 
-.sp .menu-btn:checked ~ .menu-icon .navicon {
+.sp .menu-btn:checked~.menu-icon .navicon {
   background: rgba(0, 0, 0, 0);
   transition: 0.2192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
 }
+
 /* Hamburger Menu Animation End */
 
 /* Navbar Container */
@@ -881,34 +971,44 @@ h1.en  {
 .sp .drop li {
   margin: 0;
   padding: 0;
-  padding-top:12px;
+  padding-top: 12px;
   border: none;
 }
 
 /* スマホページ */
 /* パソコンで見たときは"pc"のclassがついた画像が表示される */
-.pc { display: block !important; }
-.sp { display: none !important; }
- 
+.pc {
+  display: block !important;
+}
+
+.sp {
+  display: none !important;
+}
+
 /* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
 @media only screen and (max-width: 750px) {
-    .pc { display: none !important; }
-    .sp { display: block !important; }
+  .pc {
+    display: none !important;
+  }
 
-    .sp header {
-      height: 4rem;
-    }
+  .sp {
+    display: block !important;
+  }
 
-    .sp h1 {
-      font-size: 1.2rem;
-      letter-spacing: 1px;
-    }
+  .sp header {
+    height: 4rem;
+  }
 
-    .sp header img {
-      width: 2.3rem;
-      margin: 0;
-      margin-right: 6px;
-    }
+  .sp h1 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+
+  .sp header img {
+    width: 2.3rem;
+    margin: 0;
+    margin-right: 6px;
+  }
 
     .sp.header_back {
       height: 4rem;
@@ -920,103 +1020,104 @@ h1.en  {
       margin: 0;
     }
 
-    .sub_title {
-      font-size: 1.6rem;
-      padding: 1rem 0 !important;
-      margin: 0;
-    }
+  .sub_title {
+    font-size: 1.6rem;
+    padding: 1rem 0 !important;
+    margin: 0;
+  }
 
-    .top_news {
-      font-size: 0.9rem;
-    }
+  .top_news {
+    font-size: 0.9rem;
+  }
 
-    .top_news li{
-      padding: 1rem 0;
-    }
-    .top_news li:first-child{
-      padding-top: 1rem;
-    }
+  .top_news li {
+    padding: 1rem 0;
+  }
 
-    .about_img {
-      width: 100%;
-      height: 200px;
-      border-radius: 0;
-    }
+  .top_news li:first-child {
+    padding-top: 1rem;
+  }
 
-    .about p {
-      font-size: 0.9rem;
-      padding: 2rem 2rem;
-      margin: 0;
-    }
+  .about_img {
+    width: 100%;
+    height: 200px;
+    border-radius: 0;
+  }
 
-    a.btn.btn-flat {
-      font-size: 1rem;
-    }
+  .about p {
+    font-size: 0.9rem;
+    padding: 2rem 2rem;
+    margin: 0;
+  }
 
-    .detail {
-      height:auto;
-    }
+  a.btn.btn-flat {
+    font-size: 1rem;
+  }
 
-    .slider-container {
-      height: 200px;
-    }
+  .detail {
+    height: auto;
+  }
 
-    .top_member h4 {
-      font-size: 1.3rem;
-    }
+  .slider-container {
+    height: 200px;
+  }
 
-    .top_member .role {
-      font-size: 1rem;
-    }
+  .top_member h4 {
+    font-size: 1.3rem;
+  }
 
-    .face_img {
-      margin: 1rem 0 0 0;
-    }
+  .top_member .role {
+    font-size: 1rem;
+  }
 
-    .face_img img {
-      width: 120px;
-      height: 120px;
-    }
+  .face_img {
+    margin: 1rem 0 0 0;
+  }
 
-    .top_member {
-      padding: 0;
-      padding-top: 2rem;
-    }
+  .face_img img {
+    width: 120px;
+    height: 120px;
+  }
 
-    .about {
-      padding: 2rem 0 0 0;
-    }
+  .top_member {
+    padding: 0;
+    padding-top: 2rem;
+  }
 
-    .ask .container{
-      padding: 2rem 2rem;
-      background: none;
-      margin: 2rem 0;
-    }
+  .about {
+    padding: 2rem 0 0 0;
+  }
 
-    .ask p {
-      font-size: 1rem;
-    }
+  .ask .container {
+    padding: 2rem 2rem;
+    background: none;
+    margin: 2rem 0;
+  }
 
-    .ask .sub_title{
-      font-size: 1.5rem;
-      margin: 0 0 1rem 0;
-    }
+  .ask p {
+    font-size: 1rem;
+  }
 
-    footer {
-      margin: 0;
-    }
+  .ask .sub_title {
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+  }
 
-    footer .container {
-      display: block !important;
-    }
+  footer {
+    margin: 0;
+  }
 
-    footer img {
-      height: 50px;
-    }
+  footer .container {
+    display: block !important;
+  }
 
-    .copyright {
-      padding: 0 2rem;
-    }
+  footer img {
+    height: 50px;
+  }
+
+  .copyright {
+    padding: 0 2rem;
+  }
 
     .slider-container img {
       width: 100%;
@@ -1137,4 +1238,167 @@ h1.en  {
     footer {
       margin-top: 2rem;
     }
+}
+
+/* table用 */
+table {
+  border-collapse: collapse;
+  /* 表の枠線をつなげる */
+  width: 100%;
+  /* 表の幅を100%にする */
+  table-layout: fixed;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  /* セルの枠線を灰色にする */
+  padding: 10px;
+  /* セルの余白を10pxにする */
+}
+
+table th {
+  background-color: #eee;
+  /* 見出しセルの背景色を薄灰色にする */
+  text-align: center;
+}
+
+table td {
+  text-align: center;
+}
+
+
+
+.research tbody tr td:first-child {
+  width: 15vw;
+}
+
+.research tbody tr td:nth-child(2) {
+  width: 50vw;
+}
+
+.research thead tr th:first-child {
+  width: 15vw;
+}
+
+.research thead tr th:nth-child(2) {
+  width: 50vw;
+}
+
+
+
+.research h4 {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 750px) {
+
+  /* 画面幅が768px以下の場合 research*/
+  .research {
+
+    table,
+    table * {
+      display: block;
+      /* 表をブロック要素にする */
+      margin: auto;
+    }
+
+    thead tr {
+      display: none;
+    }
+
+    tbody td::before {
+      content: attr(data-label);
+      display: block;
+      font-size: 80%;
+      color: #333;
+      background-color: #efefef;
+
+    }
+
+
+    tbody tr td:first-child {
+      width: 100%;
+      margin: auto;
+      margin-top: 5px;
+      border-bottom: none;
+      border-radius: 10px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      padding-bottom: 3px;
+    }
+
+    tbody tr td:nth-child(2) {
+      width: 100%;
+      margin: auto;
+      border-top: none;
+      border-radius: 10px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      padding-top: 3px;
+    }
+  }
+}
+
+/* 研究室の様子 */
+
+.status {
+  display: flex;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.status img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+/* スクロールアニメーションのキーフレーム */
+@keyframes scroll {
+
+  /* 初期位置は1個目の画像が左端 */
+  0% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: 0;
+  }
+  /* 1個分左の位置に進めて2個目の画像を左端にする */
+  33% {
+    margin-left: -100%;
+  }
+
+  /* 少しの間上と同じ位置 */
+  58% {
+    margin-left: -100%;
+  }
+
+  /* 2個分左の位置に進めて3個目の画像を左端にする */
+  66% {
+    margin-left: -200%;
+  }
+
+  /* 少しの間上と同じ位置 */
+  92% {
+    margin-left: -200%;
+  }
+
+  /* 以降は上と同様に繰り返し */
+  100% {
+    margin-left: -300%;
+  }
+
+}
+
+.status>:first-child {
+  animation-name: scroll;
+  /* キーフレーム名 */
+  animation-duration: 20s;
+  /* 再生時間全体は20秒 */
+  animation-delay: 0s;
+  /* 読込直後から遅延無しで開始 */
+  animation-iteration-count: infinite;
+  /* 無限に繰り返す */
 }
