@@ -743,6 +743,63 @@ h1.en {
   font-size: 1.5rem;
 }
 
+/* 研究室紹介 */
+.intro h3 {
+  margin-top: 40px;
+}
+
+.intro th {
+  background-color: #06255d;
+  color: white;
+}
+
+.intro tbody :nth-child(even) td {
+  background-color: #efefef;
+
+}
+
+.schedule tr :first-child {
+  width: 10vw;
+}
+
+.schedule tr :nth-child(2) {
+  width: 20vw;
+}
+
+.intro dt {
+  margin-top: 20px;
+}
+
+.intro p {
+  font-size: 16px;
+}
+
+.intro li {
+  font-size: 20px;
+}
+
+.assign :first-child {
+  width: 10vw;
+}
+
+.recruit tr :first-child {
+  width: 10vw;  
+}
+
+@media only screen and (max-width: 750px) {
+  .schedule tr :first-child{
+    width: 60px;
+  }
+
+  .assign tr :first-child {
+    width: 70px;
+  }
+
+  .recruit tr :first-child {
+    width: 70px;
+  }
+  
+}
 
 /* ハンバーガーメニュー */
 /* Navbar & Navmenu color */
@@ -1071,19 +1128,21 @@ table td {
   text-align: center;
 }
 
-tbody tr td:first-child {
+
+
+.research tbody tr td:first-child {
   width: 15vw;
 }
 
-tbody tr td:nth-child(2) {
+.research tbody tr td:nth-child(2) {
   width: 50vw;
 }
 
-thead tr th:first-child {
+.research thead tr th:first-child {
   width: 15vw;
 }
 
-thead tr th:nth-child(2) {
+.research thead tr th:nth-child(2) {
   width: 50vw;
 }
 
@@ -1095,47 +1154,49 @@ thead tr th:nth-child(2) {
 
 @media screen and (max-width: 750px) {
 
-  /* 画面幅が768px以下の場合 */
-  table,
-  table * {
-    display: block;
-    /* 表をブロック要素にする */
-    margin: auto;
+  /* 画面幅が768px以下の場合 research*/
+  .research {
+
+    table,
+    table * {
+      display: block;
+      /* 表をブロック要素にする */
+      margin: auto;
+    }
+
+    thead tr {
+      display: none;
+    }
+
+    tbody td::before {
+      content: attr(data-label);
+      display: block;
+      font-size: 80%;
+      color: #333;
+      background-color: #efefef;
+
+    }
+
+
+    tbody tr td:first-child {
+      width: 100%;
+      margin: auto;
+      margin-top: 5px;
+      border-bottom: none;
+      border-radius: 10px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      padding-bottom: 3px;
+    }
+
+    tbody tr td:nth-child(2) {
+      width: 100%;
+      margin: auto;
+      border-top: none;
+      border-radius: 10px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      padding-top: 3px;
+    }
   }
-
-  thead tr {
-    display: none;
-  }
-
-  tbody td::before {
-    content: attr(data-label);
-    display: block;
-    font-size: 80%;
-    color: #333;
-    background-color: #efefef;
-    
-  }
-
-
-  tbody tr td:first-child {
-    width: 100%;
-    margin: auto;
-    margin-top: 5px;
-    border-bottom: none;
-    border-radius: 10px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    padding-bottom: 3px;
-  }
-
-  tbody tr td:nth-child(2) {
-    width: 100%;
-    margin: auto;
-    border-top: none;
-    border-radius: 10px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    padding-top: 3px;
-  }
-
 }
