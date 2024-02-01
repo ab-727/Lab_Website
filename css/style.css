@@ -745,7 +745,7 @@ h1.en {
 
 /* 研究室紹介 */
 .intro h3 {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .intro th {
@@ -764,30 +764,49 @@ h1.en {
 
 .schedule tr :nth-child(2) {
   width: 20vw;
+  border-right-color: #000;
+}
+
+.schedule tr :nth-child(3) {
+  border-left-color: #000;
 }
 
 .intro dt {
   margin-top: 20px;
+  font-size: 18px;
+}
+
+.intro dd {
+  font-size: 18px;
 }
 
 .intro p {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .intro li {
   font-size: 20px;
 }
 
-.assign :first-child {
-  width: 10vw;
+.assign tbody tr :nth-child(2) {
+  font-weight: bold;
 }
 
+.assign tbody tr :nth-child(3) {
+  font-weight: bold;
+}
+
+
 .recruit tr :first-child {
-  width: 10vw;  
+  width: 33%;
+}
+
+.recruit tbody tr :nth-child(2) {
+  text-align: left;
 }
 
 @media only screen and (max-width: 750px) {
-  .schedule tr :first-child{
+  .schedule tr :first-child {
     width: 60px;
   }
 
@@ -798,7 +817,7 @@ h1.en {
   .recruit tr :first-child {
     width: 70px;
   }
-  
+
 }
 
 /* ハンバーガーメニュー */
@@ -1199,4 +1218,67 @@ table td {
       padding-top: 3px;
     }
   }
+}
+
+/* 研究室の様子 */
+
+.status {
+  display: flex;
+  overflow: hidden;
+  margin: 0 20px;
+}
+
+.status img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+/* スクロールアニメーションのキーフレーム */
+@keyframes scroll {
+
+  /* 初期位置は1個目の画像が左端 */
+  0% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: 0;
+  }
+  /* 1個分左の位置に進めて2個目の画像を左端にする */
+  33% {
+    margin-left: -100%;
+  }
+
+  /* 少しの間上と同じ位置 */
+  58% {
+    margin-left: -100%;
+  }
+
+  /* 2個分左の位置に進めて3個目の画像を左端にする */
+  66% {
+    margin-left: -200%;
+  }
+
+  /* 少しの間上と同じ位置 */
+  92% {
+    margin-left: -200%;
+  }
+
+  /* 以降は上と同様に繰り返し */
+  100% {
+    margin-left: -300%;
+  }
+
+}
+
+.status>:first-child {
+  animation-name: scroll;
+  /* キーフレーム名 */
+  animation-duration: 20s;
+  /* 再生時間全体は20秒 */
+  animation-delay: 0s;
+  /* 読込直後から遅延無しで開始 */
+  animation-iteration-count: infinite;
+  /* 無限に繰り返す */
 }
