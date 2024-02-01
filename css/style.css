@@ -1235,6 +1235,14 @@ h1.en {
       width: 100%;
     }
 
+    .about img {
+      width: 100%;
+    }
+
+    .about div{
+      display: block !important;
+    }
+
     footer {
       margin-top: 2rem;
     }
