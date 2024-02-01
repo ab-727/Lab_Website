@@ -1010,15 +1010,15 @@ h1.en {
     margin-right: 6px;
   }
 
-    .sp.header_back {
-      height: 4rem;
-    }
+  .sp.header_back {
+    height: 4rem;
+  }
 
-    .title {
-      font-size: 2rem;
-      padding: 1rem 0 !important;
-      margin: 0;
-    }
+  .title {
+    font-size: 2rem;
+    padding: 1rem 0 !important;
+    margin: 0;
+  }
 
   .sub_title {
     font-size: 1.6rem;
@@ -1119,133 +1119,143 @@ h1.en {
     padding: 0 2rem;
   }
 
-    .slider-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover !important;
-    }
+  .slider-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+  }
 
-    .map {
-      display: block !important;
-      margin: 0;
-    }
+  .map {
+    display: block !important;
+    margin: 0;
+  }
 
-    .map .address {
-      padding: 0 1rem;
-    }
+  .map .address {
+    padding: 0 1rem;
+  }
 
-    .map p {
-      font-size: 1rem;
-    }
+  .map p {
+    font-size: 1rem;
+  }
 
-    .route img {
-      width: 100%;
-    }
+  .route img {
+    width: 100%;
+  }
 
-    iframe {
-      width: 100%;
-      height: 300px;
-    }
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
 
-    .contact_card {
-      padding-bottom: 2rem;
-    }
+  .contact_card {
+    padding-bottom: 2rem;
+  }
 
-    .contact_card h4 {
-      font-size: 1.6rem;
-    }
+  .contact_card h4 {
+    font-size: 1.6rem;
+  }
 
-    .caution_text {
-      padding: 0;
-    }
+  .caution_text {
+    padding: 0;
+  }
 
-    .interview {
-      padding: 0;
-      padding: 0 1rem;
-    }
+  .interview {
+    padding: 0;
+    padding: 0 1rem;
+  }
 
-    .link h3{
-      font-size: 1rem;
-    }
+  .link h3 {
+    font-size: 1rem;
+  }
 
-    .link a{
-      font-size: 1rem;
-      margin-bottom: 2rem;
-    }
+  .link a {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
 
-    .members {
-      margin: 0;
-      max-width: 100%;
-      padding: 0 1rem;
-    }
+  .members {
+    margin: 0;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
 
-    .card {
-      display: block !important;
-      padding: 1rem 0;
-    }
+  .card {
+    display: block !important;
+    padding: 1rem 0;
+  }
 
-    .card h4 {
-      font-size: 1.4rem;
-      font-weight: bold;
-      text-align: center;
-    }
+  .card h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+  }
 
-    .card p {
-      font-size: 1rem;
-    }
+  .card p {
+    font-size: 1rem;
+  }
 
-    .card_img {
-      width: 150px;
-      height: 150px;
-      margin:0 auto;
-    }
+  .card_img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
 
-    .card_img img {
-      border-radius: 100px;
-      border: solid 3px #4b5564;
-    }
+  .card_img img {
+    border-radius: 100px;
+    border: solid 3px #4b5564;
+  }
 
-    .members h3 {
-      padding-left: 3rem !important;
-      font-size: 1.5rem !important;
-    }
+  .members h3 {
+    padding-left: 3rem !important;
+    font-size: 1.5rem !important;
+  }
 
-    .accordion-area {
-      padding: 0;
-    }
+  .accordion-area {
+    padding: 0;
+  }
 
-    .news .title{
-      padding-left: 3rem !important;
-    }
+  .news .title {
+    padding-left: 3rem !important;
+  }
 
-    .news li {
-      margin: 0;
-    }
+  .news li {
+    margin: 0;
+  }
 
-    .news {
-      padding: 0 1rem;
-      font-size: 0.8rem;
-    }
+  .news {
+    padding: 0 1rem;
+    font-size: 0.8rem;
+  }
 
-    .news h3 {
-      font-size: 1.5rem;
-    }
+  .news h3 {
+    font-size: 1.5rem;
+  }
 
-    .news img {
-      width: 100%;
-    }
+  .news img {
+    width: 100%;
+  }
 
-    .about img {
-      width: 100%;
-    }
+  .about img {
+    width: 100%;
+  }
 
-    .about div{
-      display: block !important;
-    }
+  .about .center {
+    height: auto;
+  }
 
-    footer {
-      margin-top: 2rem;
-    }
+  .about div {
+    display: block !important;
+  }
+
+  footer {
+    margin-top: 2rem;
+  }
+
+  /* englishページ */
+  h1.en {
+    font-size: 0.7rem;
+  }
 }
 
 /* table用 */
@@ -1370,9 +1380,11 @@ table td {
   0% {
     margin-left: 0;
   }
+
   25% {
     margin-left: 0;
   }
+
   /* 1個分左の位置に進めて2個目の画像を左端にする */
   33% {
     margin-left: -100%;
